@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".heroi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnConsultaHeroi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:onClick="consultarHerois"
+                android:text="@string/btnConsultaHeroi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+            <Button
+                android:id="@+id/btnCadastrarMembro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="112dp"
+                android:onClick="cadastrarHeroi"
+                android:text="@string/btnCadastrarMembro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblEquipamento" />
+
+            <TextView
+                android:id="@+id/lblEquipamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/lblEquipamento"
+                app:layout_constraintEnd_toEndOf="@+id/lblNivelAcessso"
+                app:layout_constraintStart_toStartOf="@+id/lblNivelAcessso"
+                app:layout_constraintTop_toBottomOf="@+id/lblNivelAcessso" />
+
+            <EditText
+                android:id="@+id/txtNivelAcesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtNivelAcesso"
+                app:layout_constraintEnd_toEndOf="@+id/txtVulnerabilidades"
+                app:layout_constraintStart_toStartOf="@+id/txtVulnerabilidades"
+                app:layout_constraintTop_toBottomOf="@+id/txtVulnerabilidades" />
+
+            <TextView
+                android:id="@+id/lblNivelAcessso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/lblNivelAcessso"
+                app:layout_constraintEnd_toEndOf="@+id/lblVulnerabilidades"
+                app:layout_constraintStart_toStartOf="@+id/lblVulnerabilidades"
+                app:layout_constraintTop_toBottomOf="@+id/lblVulnerabilidades" />
+
+            <TextView
+                android:id="@+id/lblVulnerabilidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/lblVulnerabilidades"
+                app:layout_constraintEnd_toEndOf="@+id/lblEspecie"
+                app:layout_constraintHorizontal_bias="0.127"
+                app:layout_constraintStart_toStartOf="@+id/lblEspecie"
+                app:layout_constraintTop_toBottomOf="@+id/lblEspecie" />
+
+            <EditText
+                android:id="@+id/txtEspecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtEspecie"
+                app:layout_constraintEnd_toEndOf="@+id/txtCodNome"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtCodNome"
+                app:layout_constraintTop_toBottomOf="@+id/txtCodNome" />
+
+            <TextView
+                android:id="@+id/lblEspecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/lblEspecie"
+                app:layout_constraintEnd_toEndOf="@+id/lblCodNome"
+                app:layout_constraintStart_toStartOf="@+id/lblCodNome"
+                app:layout_constraintTop_toBottomOf="@+id/lblCodNome" />
+
+            <EditText
+                android:id="@+id/txtCodNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtCodNome"
+                app:layout_constraintEnd_toEndOf="@+id/txtNome"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtNome"
+                app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+            <EditText
+                android:id="@+id/txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtNome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.825"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblBemVindoHeroi" />
+
+            <TextView
+                android:id="@+id/lblCodNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/lblCodNome"
+                app:layout_constraintEnd_toEndOf="@+id/lblNome"
+                app:layout_constraintStart_toStartOf="@+id/lblNome"
+                app:layout_constraintTop_toBottomOf="@+id/lblNome" />
+
+            <TextView
+                android:id="@+id/lblNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/lblNome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblBemVindoHeroi" />
+
+            <TextView
+                android:id="@+id/lblBemVindoHeroi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/lblBemVindoHeroi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtVulnerabilidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtVulnerabilidades"
+                app:layout_constraintEnd_toEndOf="@+id/txtEspecie"
+                app:layout_constraintStart_toStartOf="@+id/txtEspecie"
+                app:layout_constraintTop_toBottomOf="@+id/txtEspecie" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="204dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNivelAcesso"
+                app:layout_constraintStart_toStartOf="@+id/txtNivelAcesso"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelAcesso" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

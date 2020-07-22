@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consultaEquipamento">
+
+    <TextView
+        android:id="@+id/lblBemVindoConsultaEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/lblBemVindoConsultaEq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblConsulNomeEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/lblConsulNomeEq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBemVindoConsultaEq" />
+
+    <TextView
+        android:id="@+id/txtConsulNomeEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/txtConsulNomeEq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBemVindoConsultaEq" />
+
+    <TextView
+        android:id="@+id/lblConsulDescricaoEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/lblConsulDescricaoEq"
+        app:layout_constraintEnd_toEndOf="@+id/lblConsulNomeEq"
+        app:layout_constraintStart_toStartOf="@+id/lblConsulNomeEq"
+        app:layout_constraintTop_toBottomOf="@+id/lblConsulNomeEq" />
+
+    <TextView
+        android:id="@+id/txtConsulDescricaoEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/txtConsulDescricaoEq"
+        app:layout_constraintEnd_toEndOf="@+id/txtConsulNomeEq"
+        app:layout_constraintStart_toStartOf="@+id/txtConsulNomeEq"
+        app:layout_constraintTop_toBottomOf="@+id/txtConsulNomeEq" />
+
+    <TextView
+        android:id="@+id/lblConsulFinaEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/lblConsulFinaEq"
+        app:layout_constraintEnd_toEndOf="@+id/lblConsulDescricaoEq"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lblConsulDescricaoEq"
+        app:layout_constraintTop_toBottomOf="@+id/lblConsulDescricaoEq" />
+
+    <TextView
+        android:id="@+id/txtConsulFinEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/txtConsulFinEq"
+        app:layout_constraintEnd_toEndOf="@+id/txtConsulDescricaoEq"
+        app:layout_constraintStart_toStartOf="@+id/txtConsulDescricaoEq"
+        app:layout_constraintTop_toBottomOf="@+id/txtConsulDescricaoEq" />
+
+    <Button
+        android:id="@+id/btnVoltarMenuEq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:onClick="voltarMenu"
+        android:text="@string/btnVoltarMenuEq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblConsulFinaEq" />
+</androidx.constraintlayout.widget.ConstraintLayout>

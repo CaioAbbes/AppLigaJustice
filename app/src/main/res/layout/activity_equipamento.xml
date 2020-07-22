@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".equipamento">
+
+    <TextView
+        android:id="@+id/lblBemVindoEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/lblBemVindoEquipa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNomeEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/lblNomeEquipa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBemVindoEquipa" />
+
+    <EditText
+        android:id="@+id/txtNomeEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtNomeEquipa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBemVindoEquipa" />
+
+    <TextView
+        android:id="@+id/lblDescricaoEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/lblDescricaoEquipa"
+        app:layout_constraintEnd_toEndOf="@+id/lblNomeEquipa"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/lblNomeEquipa"
+        app:layout_constraintTop_toBottomOf="@+id/lblNomeEquipa" />
+
+    <EditText
+        android:id="@+id/txtDescricaoEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtDescricaoEquipa"
+        app:layout_constraintEnd_toEndOf="@+id/txtNomeEquipa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNomeEquipa"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeEquipa" />
+
+    <TextView
+        android:id="@+id/lblFinalidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/lblFinalidade"
+        app:layout_constraintEnd_toEndOf="@+id/lblDescricaoEquipa"
+        app:layout_constraintStart_toStartOf="@+id/lblDescricaoEquipa"
+        app:layout_constraintTop_toBottomOf="@+id/lblDescricaoEquipa" />
+
+    <EditText
+        android:id="@+id/txtFinalidadeEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtFinalidadeEquipa"
+        app:layout_constraintEnd_toEndOf="@+id/txtDescricaoEquipa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtDescricaoEquipa"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoEquipa" />
+
+    <Button
+        android:id="@+id/btnCadastrarEquipamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="cadastrarEquipa"
+        android:text="@string/btnCadastrarEquipamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFinalidade" />
+
+    <Button
+        android:id="@+id/btnConsultarEqauipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:onClick="consultarEquipa"
+        android:text="@string/btnConsultarEqauipa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFinalidadeEquipa" />
+</androidx.constraintlayout.widget.ConstraintLayout>

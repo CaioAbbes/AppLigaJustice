@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consultaVilao">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDataAtaqueConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/txtDataAtaqueConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtHeroiRivalConsul"
+                app:layout_constraintStart_toStartOf="@+id/txtHeroiRivalConsul"
+                app:layout_constraintTop_toBottomOf="@+id/txtHeroiRivalConsul" />
+
+            <TextView
+                android:id="@+id/txtHeroiRivalConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/txtHeroiRivalConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtFinaConsulEq"
+                app:layout_constraintStart_toStartOf="@+id/txtFinaConsulEq"
+                app:layout_constraintTop_toBottomOf="@+id/txtFinaConsulEq" />
+
+            <TextView
+                android:id="@+id/lblEquipaConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblEquipaConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblNivelConsul"
+                app:layout_constraintStart_toStartOf="@+id/lblNivelConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblNivelConsul" />
+
+            <TextView
+                android:id="@+id/lblBemvindovilao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/lblBemvindovilao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblConsultaNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblConsultaNome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblBemvindovilao" />
+
+            <TextView
+                android:id="@+id/txtConsultaNomeVilao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtConsultaNomeVilao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.672"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblBemvindovilao" />
+
+            <TextView
+                android:id="@+id/lblCodNomeConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblCodNomeConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblConsultaNome"
+                app:layout_constraintStart_toStartOf="@+id/lblConsultaNome"
+                app:layout_constraintTop_toBottomOf="@+id/lblConsultaNome" />
+
+            <TextView
+                android:id="@+id/txtCodNomeConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtCodNomeConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtConsultaNomeVilao"
+                app:layout_constraintStart_toStartOf="@+id/txtConsultaNomeVilao"
+                app:layout_constraintTop_toBottomOf="@+id/txtConsultaNomeVilao" />
+
+            <TextView
+                android:id="@+id/lblEspecieConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblEspecieConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblCodNomeConsul"
+                app:layout_constraintStart_toStartOf="@+id/lblCodNomeConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblCodNomeConsul" />
+
+            <TextView
+                android:id="@+id/txtEspecieConsulVilao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtEspecieConsulVilao"
+                app:layout_constraintEnd_toEndOf="@+id/txtCodNomeConsul"
+                app:layout_constraintStart_toStartOf="@+id/txtCodNomeConsul"
+                app:layout_constraintTop_toBottomOf="@+id/txtCodNomeConsul" />
+
+            <TextView
+                android:id="@+id/lblVulneConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblVulneConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblEspecieConsul"
+                app:layout_constraintStart_toStartOf="@+id/lblEspecieConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblEspecieConsul" />
+
+            <TextView
+                android:id="@+id/txtVulneConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtVulneConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtEspecieConsulVilao"
+                app:layout_constraintStart_toStartOf="@+id/txtEspecieConsulVilao"
+                app:layout_constraintTop_toBottomOf="@+id/txtEspecieConsulVilao" />
+
+            <TextView
+                android:id="@+id/lblNivelConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblNivelConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblVulneConsul"
+                app:layout_constraintStart_toStartOf="@+id/lblVulneConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblVulneConsul" />
+
+            <TextView
+                android:id="@+id/txtNivelConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtNivelConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtVulneConsul"
+                app:layout_constraintStart_toStartOf="@+id/txtVulneConsul"
+                app:layout_constraintTop_toBottomOf="@+id/txtVulneConsul" />
+
+            <Button
+                android:id="@+id/btnVoltarMenuPrince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="VoltarMenu"
+                android:text="@string/btnVoltarMenuPrince"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblEsconderijoConsul" />
+
+            <TextView
+                android:id="@+id/txtEquipaConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtEquipaConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtNivelConsul"
+                app:layout_constraintStart_toStartOf="@+id/txtNivelConsul"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelConsul" />
+
+            <TextView
+                android:id="@+id/lblHeroiRivalConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/lblHeroiRivalConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblFinaConsuEq"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/lblFinaConsuEq"
+                app:layout_constraintTop_toBottomOf="@+id/lblFinaConsuEq" />
+
+            <TextView
+                android:id="@+id/lblDataAtaqueConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/lblDataAtaqueConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblHeroiRivalConsul"
+                app:layout_constraintStart_toStartOf="@+id/lblHeroiRivalConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblHeroiRivalConsul" />
+
+            <TextView
+                android:id="@+id/lblEsconderijoConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/lblEsconderijoConsul"
+                app:layout_constraintEnd_toEndOf="@+id/lblDataAtaqueConsul"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@+id/lblDataAtaqueConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblDataAtaqueConsul" />
+
+            <TextView
+                android:id="@+id/txtEsconderijoConsul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtEsconderijoConsul"
+                app:layout_constraintEnd_toEndOf="@+id/txtDataAtaqueConsul"
+                app:layout_constraintStart_toStartOf="@+id/txtDataAtaqueConsul"
+                app:layout_constraintTop_toBottomOf="@+id/txtDataAtaqueConsul" />
+
+            <TextView
+                android:id="@+id/lblDescConsulEq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/lblDescConsulEq"
+                app:layout_constraintEnd_toEndOf="@+id/lblEquipaConsul"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="@+id/lblEquipaConsul"
+                app:layout_constraintTop_toBottomOf="@+id/lblEquipaConsul" />
+
+            <TextView
+                android:id="@+id/txtConsulDescEq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/txtConsulDescEq"
+                app:layout_constraintEnd_toEndOf="@+id/txtEquipaConsul"
+                app:layout_constraintStart_toStartOf="@+id/txtEquipaConsul"
+                app:layout_constraintTop_toBottomOf="@+id/txtEquipaConsul" />
+
+            <TextView
+                android:id="@+id/lblFinaConsuEq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/lblFinaConsuEq"
+                app:layout_constraintEnd_toEndOf="@+id/lblDescConsulEq"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/lblDescConsulEq"
+                app:layout_constraintTop_toBottomOf="@+id/lblDescConsulEq" />
+
+            <TextView
+                android:id="@+id/txtFinaConsulEq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/txtFinaConsulEq"
+                app:layout_constraintEnd_toEndOf="@+id/txtConsulDescEq"
+                app:layout_constraintStart_toStartOf="@+id/txtConsulDescEq"
+                app:layout_constraintTop_toBottomOf="@+id/txtConsulDescEq" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
